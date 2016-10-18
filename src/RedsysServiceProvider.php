@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssheduardo\Redsys;
+namespace Miguelsl\Redsys;
 
 use Illuminate\Support\ServiceProvider;
 

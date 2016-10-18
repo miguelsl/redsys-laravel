@@ -5,7 +5,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 
 ## Introducción
-
+Este proyecto esta realizado a partir del trabajo de Ssheduardo (http://github.com/ssheduardo/redsys-laravel)
 Tras finalizar la actualización de la clases [Redsys][link-redsys] para trabajar con sha256, he aprovechado en crear este package para laravel 5.1, de esta forma hacemos más ameno el trabajar con este framework.
 
 ## Instalación
@@ -13,7 +13,7 @@ Tras finalizar la actualización de la clases [Redsys][link-redsys] para trabaja
 Via Composer
 
 ``` bash
-$ composer require ssheduardo/redsys-laravel
+$ composer require miguelsl/redsys-laravel
 ```
 
 O si lo prefieres, puedes agregarlo en la sección **require** de tu composer.json
@@ -22,17 +22,17 @@ O si lo prefieres, puedes agregarlo en la sección **require** de tu composer.js
 ```
 Ahora debemos cargar nuestro Services Provider dentro del array **'providers'** (config/app.php)
 ```php
-Ssheduardo\Redsys\RedsysServiceProvider::class
+Miguelsl\Redsys\RedsysServiceProvider::class
 ```
 
 Creamos un alias dentro del array **'aliases'** (config/app.php)
 ```php
-'Redsys'    => Ssheduardo\Redsys\Facades\Redsys::class,
+'Redsys'    => Miguelsl\Redsys\Facades\Redsys::class,
 ```
 
 Y finalmente publicamos nuestro archivo de configuración
 ```bash
-php artisan vendor:publish --provider="Ssheduardo\Redsys\RedsysServiceProvider"
+php artisan vendor:publish --provider="Miguelsl\Redsys\RedsysServiceProvider"
 ```
 
 
@@ -52,7 +52,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Ssheduardo\Redsys\Facades\Redsys;
+use Miguelsl\Redsys\Facades\Redsys;
 
 class RedsysController extends Controller
 {

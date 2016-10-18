@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssheduardo\Redsys;
+namespace Miguelsl\Redsys;
 use Exception;
 
 class Tpv
@@ -50,6 +50,39 @@ class Tpv
 
     /************* NEW METHODS ************* */
 
+    public function setIdentifierRequired() {
+        $this->_setParameters['DS_MERCHANT_IDENTIFIER'] = 'REQUIRED';
+    }
+
+    /**
+     * Get Ds_MerchantIdentifier of Notification
+     * @param $paraments Array with parameters
+     * @return string
+     */
+    function getMerchantIdentifier($paraments){
+        $identifier = '';
+        foreach($paraments as $key => $value) {
+            if(strtolower($key) == 'ds_merchant_identifier' ){
+                $identifier = $value;
+            }
+        }
+        return $identifier;
+    }
+
+    /**
+     * Get Ds_ExpiryDate of Notification
+     * @param $paraments Array with parameters
+     * @return string
+     */
+    function getExpiryDate($paraments){
+        $date = '';
+        foreach($paraments as $key => $value) {
+            if(strtolower($key) == 'ds_expirydate' ){
+                $date = $value;
+            }
+        }
+        return $date;
+    }
 
     /**
      * Set amount (required)
@@ -92,6 +125,7 @@ class Tpv
     {
         return $this->_setParameters['DS_MERCHANT_ORDER'];
     }
+
 
 
     /**

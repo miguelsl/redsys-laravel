@@ -1,14 +1,14 @@
 {
-    "name": "ssheduardo/redsys-laravel",
-    "description": "Package redsys for laravel 5.1",
+    "name": "miguelsl/redsys-laravel",
+    "description": "Package redsys for laravel 5.1. Forked from ssheduardo",
     "keywords": ["payment", "pasarela", "lacaixa", "sabadell", "redsys", "tpv"],
-    "homepage": "https://github.com/ssheduardo/redsys-laravel",
+    "homepage": "https://github.com/miguelsl/redsys-laravel",
     "license": "MIT",
     "authors": [
         {
             "name": ":Eduardo D",
-            "email": "ssh.eduardo@gmail.com",
-            "homepage": "http://ubublog.com",
+            "email": "sanchez.miglop@gmail.com",
+            "homepage": "",
             "role": "Developer"
         }
     ],
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ssheduardo\\Redsys\\": "src"
+            "Miguelsl\\Redsys\\": "src"
         }
     },
     "minimum-stability": "stable"

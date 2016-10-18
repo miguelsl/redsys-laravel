@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssheduardo\Redsys\Facades;
+namespace Miguelsl\Redsys\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
